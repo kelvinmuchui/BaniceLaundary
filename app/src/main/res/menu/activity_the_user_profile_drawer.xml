@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/personico"
+        android:title="Profile" />
+
+    </group>
+    <item android:title="Your Orders">
+        <menu>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/providers"
+            android:icon="@drawable/activeorder"
+            android:title="Providers" />
+      
+        <item
+            android:id="@+id/completeRequest"
+            android:icon="@drawable/activeorder"
+            android:title="My Request" />
+
+        <item
+            android:id="@+id/payment"
+            android:icon="@drawable/previous"
+            android:title="Make Payment" />
+    </group>
+        </menu>
+    </item>
+
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="Share The App" />
+
+            <item
+                android:id="@+id/contactus"
+                android:icon="@drawable/contactus"
+                android:title="Contact us" />
+        </menu>
+    </item>
+
+</menu>

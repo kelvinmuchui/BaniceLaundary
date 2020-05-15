@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Clothes">
+        <item>Wollen</item>
+        <item>Cashmare</item>
+        <item>Silk</item>
+        <item>Cotton</item>
+        <item>Leather</item>
+    </string-array>
+
+    <string-array name="services">
+        <item>Dry Clean</item>
+        <item>Wash</item>
+        <item>Wash and Fold</item>
+        <item>Ironing</item>
+    </string-array>
+</resources>

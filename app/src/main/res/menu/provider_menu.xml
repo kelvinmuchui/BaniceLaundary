@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/personico"
+            android:title="Profile" />
+
+    </group>
+    <item android:title="Your Request">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/myServices"
+                    android:icon="@drawable/activeorder"
+                    android:title="My Services" />
+
+                <item
+                    android:id="@+id/myRequest"
+                    android:icon="@drawable/activeorder"
+                    android:title="My Requests" />
+
+
+            </group>
+        </menu>
+    </item>
+
+
+
+</menu>

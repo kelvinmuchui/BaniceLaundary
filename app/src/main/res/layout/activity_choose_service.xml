@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.ChooseServiceActivity">
+   <androidx.appcompat.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="@color/colorPrimary"
+       android:id="@+id/toolbar"/>
+ <com.google.android.material.textfield.TextInputLayout
+     android:layout_width="match_parent"
+     android:id="@+id/dID"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/toolbar"
+     android:layout_marginLeft="20dp"
+     android:layout_marginTop="10dp"
+     >
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/pickUpedt"
+      android:ems="10"
+      android:hint="Pick Up Location" />
+ </com.google.android.material.textfield.TextInputLayout>
+ <com.google.android.material.textfield.TextInputLayout
+     android:layout_width="match_parent"
+     android:id="@+id/time"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/dID"
+     android:layout_marginLeft="20dp"
+     android:layout_marginTop="10dp"
+
+     >
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/picktimeedt"
+      android:ems="10"
+      android:hint="Preffered pick up time" />
+ </com.google.android.material.textfield.TextInputLayout>
+
+ <TextView
+     android:id="@+id/mode"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_below="@id/time"
+     android:text="Payment Mode"
+     android:layout_marginTop="40dp"
+     android:textColor="#000"
+     android:textSize="20dp"
+     android:textStyle="bold"/>
+ <RadioGroup
+     android:id="@+id/radiogroup"
+     android:layout_below="@+id/mode"
+     android:layout_width="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_height="wrap_content">
+  <RadioButton
+      android:id="@+id/mpesa"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Mpesa"
+      android:checked="true"
+      android:textSize="18dp"/>
+  <RadioButton
+      android:id="@+id/cash"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Cash"
+      android:textSize="18dp"/>
+ </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/paydate"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/paydateedt"
+            android:ems="10"
+            android:hint="Payment date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/deliverdate"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paydate"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliverdateedt"
+            android:ems="10"
+            android:hint="Preffered devilery date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40sp"
+        android:background="@drawable/buttonview"
+        android:text="View Details"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

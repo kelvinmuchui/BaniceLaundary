@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="android:fontFamily">@font/signika</item>
+        <item name="DialogSpotColor">@color/colorAccent</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="DialogSpotCount">6</item>
+    </style>
+</resources>
